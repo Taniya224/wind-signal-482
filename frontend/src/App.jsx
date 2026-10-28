@@ -12,8 +12,7 @@ import {
 } from "recharts";
 import "./App.css";
 
-const API = "";
-function App() {
+const API = import.meta.env.VITE_API_URL || "";function App() {
   const [data, setData] = useState([]);
   const [metrics, setMetrics] = useState(null);
   const [error, setError] = useState("");
